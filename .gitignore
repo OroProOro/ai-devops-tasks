@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output and caches
+dist/
+build/
+.cache/
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Docker: local volumes and machine-specific overrides
+docker-data/
+mongo-volume/
+docker-compose.override.yml
+
+# Local MongoDB data (WiredTiger files, journal, lock)
+mongo-data/
+mongodb-data/
+data/db/
+dump/
+*.wt
+WiredTiger*
+mongod.lock
+journal/
+diagnostic.data/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
